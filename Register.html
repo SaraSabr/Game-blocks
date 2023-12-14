@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ENTER TO GAME</title>
+ <style>
+  body {
+    background-image: url("./imgs/abstract-high-tech-background-virtual-reality-technology-innovation-head-up-display-interface-futuristic-sci-fi-glowing-hud-circle-digital-infographic-business-vector.jpg");
+    background-size: cover;
+    }
+    #formContainer {
+      background-color: transparent;
+      width: 310px;
+      float: right;
+      padding: 20px;
+      margin-top: 20px;
+     /* margin-left: 100px;*/
+      
+    /* border: 1px solid rgba(255, 255, 255, 0.7); */
+    /* border-radius: 20px; */
+    display: flex;
+    /* box-shadow: 15px 10px 17px rgba(10, 10, 10, 1.15); */
+    opacity: 0;
+    transition: transform 0.3s;
+    border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 5px 5px 5px 10px lightblue;
+}
+#head{
+ /* background-color:aqua;*/
+  width: 400px;
+  height: 200px;
+  margin-left: 550px;
+ /* margin-top: 0px;*/
+ /* background-color: transparent;*/
+}
+#head h2{
+  font-size: 50px;
+  color: aliceblue;
+  opacity: 0; 
+}
+#head p{
+  font-size: 40px;
+  color: aliceblue;
+  opacity: 0; 
+}
+    
+ </style>
+</head>
+<body >
+  <div id="head">
+  <h2 id="hhhh">Hello Every body!</h2>
+  <p id="para">Welcome to our simple game. <br>we hope you enjoy with our game. <br>please fill this form to begin game. </p>
+
+  </div>
+  <div id="formContainer">
+      <form action="index.html" method="get" >
+    <fieldset >
+      <legend >Register Form</legend >
+      <input type="hidden" id="userId" name="userId"> <br>
+      <label for="firstName" style="color: white;">First Name:</label><br>
+      <input type="text" id="firstName" name="firstName" required><br>
+      <label for="lastName" style="color: white;">Last Name:</label><br>
+      <input type="text" id="lastName" name="lastName" required><br>
+      <label for="email" style="color: white;">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <label for="password" style="color: white;">Password:</label><br>
+      <input type="password" id="password" name="password" required><br>
+      <label for="repeatPassword" style="color: white;">Repeat Password:</label><br>
+      <input type="password" id="repeatPassword" name="repeatPassword" required><br>
+    </fieldset>
+      <fieldset>
+        <legend>Gender:</legend>
+        <label for="maleGender" style="color: white;">
+          <input type="radio" id="maleGender" name="gender" value="male" style="color: white;"> Male
+        </label>
+        <label for="femaleGender" style="color: white;">
+          <input type="radio" id="femaleGender" name="gender" value="female" style="color: white;"> Female
+        </label>
+      </fieldset>
+    <fieldset>
+    <label style="color: white;">
+    <input type="checkbox"   name="termsAgreement" required >
+    I agree to the <a href="condition.html" target="_blank" style="color: white;">terms and conditions</a>
+    </label>
+    </fieldset>
+  <fieldset>  
+  <input type="submit" value="Submit" id="omar">
+  <input type="reset" value="Reset" >
+  </fieldset>
+  </form>
+</div>
+<!-- action for words and register -->
+<script>
+  var forma =document.getElementById('formContainer');
+  setTimeout(function() {
+  forma.style.opacity = '1';
+  },6000);
+  var title = document.getElementById('hhhh');
+  setTimeout(function() {
+  title.style.opacity = '1';
+  }, 2000);
+  var paragraph = document.getElementById('para');
+  setTimeout(function() {
+  paragraph.style.opacity = '1';
+  },4000);
+// action for register
+  var forma = document.getElementById('formContainer');
+  forma.addEventListener('mouseover', function() {
+  forma.style.transform = 'scale(1.2)';
+  });  
+  forma.addEventListener('mouseout', function() {
+  forma.style.transform = 'scale(1)';
+  });
+</script>
+</body>
+</html>
